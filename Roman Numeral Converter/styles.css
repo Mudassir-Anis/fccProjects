@@ -1,0 +1,98 @@
+:root {
+    --bcColor : #1b1b32;
+    --input-color : #1b1b32;
+    --convert-btn-color : #feac32;
+    --errorColor : #850000;
+  }
+  
+  body{
+    background-color : var(--bcColor);
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    height : 100%;
+    padding-top : 40px;
+    padding-bottom : 40px;
+    
+  }
+  h1{
+    width : 350px;
+    text-align : center;
+    word-spacing : 10px;
+    font-weight : 550;
+    text-transform : upperCase;
+    margin : 0;
+  }
+  #fcc-logo{
+    height : 30px;
+  }
+  #main-container{
+    display : flex;
+    flex-direction : column;
+    color : white;
+    justify-content : center;
+    align-items : center;
+    row-gap : 30px;
+  }
+  #input-container{
+    box-sizing : border-box;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    width : 400px;
+    border : 2px solid white;
+    row-gap : 20px;
+    padding-top : 30px;
+    padding-bottom : 30px;
+    background-color : rgba(255,255,255,.1);
+  }
+  
+  #number{
+    width : 80%;
+    height : 40px;
+    border : 2px solid white;
+    background-color : var(--input-color);
+    color : white;
+    font-size : 25px;
+  }
+  #convert-btn{
+    width : 82%;
+    height : 42px;
+    border : 3px solid var(--convert-btn-color);
+    background-image : linear-gradient(to top,var(--convert-btn-color),#fecc4c);
+  }
+  #inp-label{
+    font-weight : bold;
+    font-size : 1.5rem;
+  }
+  
+  .style1{
+    width : 400px;
+    background-color : rgba(255,255,255,.1);
+    border : 2px solid white;
+    min-height : 70px;
+    display : none;
+    justify-content : center;
+    align-items : center;
+    padding : 10px;
+    box-sizing : border-box;
+    font-size : 2.5rem;
+    
+  }
+  .style2{
+    width : 400px;
+    background-color : #ffadad;
+    color : var(--errorColor);
+    border : 2px solid var(--errorColor);
+    min-height : 70px;
+    display : none;
+    justify-content : center;
+    align-items : center;
+    padding : 10px;
+    box-sizing : border-box;
+    font-size : 1.5rem;
+    text-align : center;
+  
+  }
+  
