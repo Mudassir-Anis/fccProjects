@@ -1,0 +1,105 @@
+:root {
+    --orange : #f1be32;
+}
+
+
+
+
+
+
+body{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    height : 100%;
+    flex-direction : column;
+    background-color: #1b1b32;
+    color : white;
+    padding : 30px;
+}
+#main-container{
+    display : flex;
+    justify-content : center;
+    flex-direction: column;
+    align-items: center;
+    /* width: clamp(320px, 50vw, 460px); */
+    width : 50vw;
+    max-width : 460px;
+    min-width : 320px;
+   
+}
+h1{
+    word-spacing: 10px;
+    font-size : 2.125rem;
+    width : 300px;
+    text-align: center;
+}
+#inp-label{
+    font-size : 1.125rem;
+}
+#btn{
+   
+    height : 30px;
+    box-sizing: border-box;
+    background-color: #f1be32;
+    border: none;
+}
+
+#inp-field{
+    height : 23px;
+}
+#result{
+    margin-top : 30px;
+    border : 2px solid #f1be32;
+    min-height : 80px;
+    width : 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    word-break : break-all;
+}
+#stack-heading{
+    word-spacing: 10px;
+}
+#stack{
+    width : 80%;
+    border : 2px solid #f1be32;
+    border-style: dashed;
+    min-height : 150px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+#input-container{
+    display : flex;
+    gap : 10px;
+}
+@media screen and (max-width : 826px) {
+    #input-container{
+        display : flex;
+        flex-direction: column;
+        gap : 10px;
+        width : 80%;
+        text-align: center;
+    }
+}
+.basic-style{
+    border: 5px solid var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width : 90%;
+    min-height: 60px;
+    font-size : 1.125rem;
+    padding : 10px;
+    box-sizing: border-box;
+}
+#stack-heading{
+    text-align: center;
+    font-size : 2.125rem;
+    width :50%;
+    font-weight: normal;
+}
