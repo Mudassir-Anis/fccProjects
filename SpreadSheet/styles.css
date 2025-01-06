@@ -1,0 +1,10 @@
+#container{
+    display: grid;
+    grid-template-columns: 50px repeat(10,200px);
+}
+.label{
+    background-color: lightgray;
+    text-align: center;
+    line-height : 30px;
+    vertical-align: middle;
+}
