@@ -45,18 +45,20 @@ const updateResult = (text) => {
 
 
 const validateNumber = (str) => {
-    const regex = /\d/g;
-    const first = str[0];
-    const str2 = str.replace(regex,"5");
-    console.log(str2);
-    if(obj[str2] || obj[`${first}${str2.slice(1)}`]){
-        return true;
-    }
-    else {
-        return false;
-    }
+    const regex1 = /^1?\s?(\(\d{3}\)|\d{3})[\s-]?\d{3}[\s-]?\d{4}$/
+
+    // const regex = /\d/g;
+    // const first = str[0];
+    // const str2 = str.replace(regex,"5");
+    // console.log(str2);
+    // if(obj[str2] || obj[`${first}${str2.slice(1)}`]){
+    //     return true;
+    // }
+    // else {
+    //     return false;
+    // }
     
+    return regex1.test(str);
 }
 
 addListeners();
-
