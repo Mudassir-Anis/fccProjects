@@ -1,0 +1,120 @@
+:root{
+  --backgroundColor : #1b1b32;
+  --mainScreenColor : #f5f6f7;
+  --buttonColor : #7f21ab;
+}
+
+body{
+  background-color : var(--backgroundColor);
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  height : 100;
+  padding-top : 40px;
+  padding-bottom: 40px;
+}
+.fcc-logo{
+  height : 30px;
+}
+.main-container{
+  display : flex;
+  flex-direction : column;
+  justify-content : center;
+  align-items : center;
+}
+.app-container{
+  background-color : var(--mainScreenColor);
+  max-width : 450px;
+  width : 410px;
+  min-width : 200px;
+  display : flex;
+  flex-direction : column;
+  align-items : center;
+  height : 700px;
+  border-radius : 20px;
+  row-gap : 20px;
+  padding : 20px;
+  box-sizing : border-box;
+  box-shadow : 10px 10px rgba(223, 220, 220, 0.75);
+}
+.heading{
+  font-size : 40px;
+  font-weight : bolder;
+  color : var(--mainScreenColor);
+  text-align : center;
+}
+.output{
+  width : 100%;
+  height : 40%;
+}
+.inp-label{
+  font-size : 20px;
+}
+.search-input{
+  height : 30px;
+  font-size : 15px;
+}
+.search-button{
+  
+  padding : 10px 15px;
+  border-radius : 20px;
+  border : none;
+  background-color : var(--buttonColor);
+  color : white;
+}
+.input-container{
+  column-gap : 12px;
+  display : flex;
+}
+.grid-container{
+  margin-top : 10px;
+  height : 40%;
+  width : 100%;
+  display : grid;
+  grid-template-columns : 2fr 1fr;
+  grid-template-rows : repeat(7,1fr);
+  row-gap : 5px;
+  column-gap : 5px;
+
+}
+.item{
+  background-color : var(--buttonColor);
+}
+
+#pokemon-name,#pokemon-id{
+font-weight : 600;
+}
+#img-container{
+display : flex;
+width : 100%;
+height : 80%;
+justify-content : center;
+align-items : center;
+}
+#front-pic{
+height : 200px;
+}
+#types{
+display : flex;
+column-gap : 10px;
+
+}
+.type{
+background-color : GRAY;
+display : flex;
+justify-content : center;
+align-items : center;
+
+padding : 8px 20px;
+border-radius : 10px;
+}
+.item{
+display : flex;
+color : white;
+justify-content : center;
+align-items : center;
+
+}
+.bold{
+font-weight : bold;
+}

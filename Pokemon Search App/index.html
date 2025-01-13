@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset ="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pokeman Search App</title>
+  </head>
+  <body>
+    <div class="main-container" id="main-container">
+        <img class="fcc-logo"src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"/>
+        <h1 class="heading">Pokémon Search App</h1>
+        <div id="app-container" class="app-container">
+          <label class="inp-label" id="inp-label" for="search-input">Search for Pokémon Name or ID:</label>
+          <form id="input-container" class="input-container">
+            <input class="search-input" id="search-input" required/>
+            <button id="search-button" class="search-button">Search</button>
+          </form>
+          <div class="output" id="output">
+            <div id="name-id" class="name-id">
+              <span id="pokemon-name"></span>
+              <span id="pokemon-id"></span>
+            </div>
+            <div id="height-weight" class="height-weight">
+              <span id="weight"></span>
+              <span id="height"></span>
+            </div>
+            <div id="img-container">
+              <img id="sprite"></img>
+            </div>
+            
+            <div id="types"></div>
+            
+          </div>
+          <div id="grid-conatiner" class="grid-container">
+            <div class="item bold" >Base</div>
+            <div class="item bold" >Stats</div>
+            <div class="item">HP:</div>
+            <div class="item" id="hp"></div>
+            <div class="item">Attack</div>
+            
+            <div class="item" id="attack"></div>
+            <div class="item">Defense</div>
+            <div class="item" id="defense"></div>
+            <div class="item">Sp. Attack:</div>
+            <div class="item" id="special-attack"></div>
+            <div class="item">Sp. Defense:</div>
+            <div class="item" id="special-defense"></div>
+            <div class="item">Speed:</div>
+            <div class="item" id="speed"></div>
+          </div>
+          </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
